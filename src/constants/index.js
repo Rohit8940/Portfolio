@@ -15,10 +15,10 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    // meta,
+    // starbucks,
+    // tesla,
+    // shopify,
     // carrent,
     zomato,
     weather,
@@ -26,6 +26,12 @@ import {
     // tripguide,
     threejs,
     car,
+    react,
+    mern,
+    dsa,
+    react_native,
+    IEEE,
+    linkedin
   } from "../assets";
   
   export const navLinks = [
@@ -121,7 +127,7 @@ import {
     {
       title: "React.js Developer",
       company_name: "",
-      icon: starbucks,
+      icon: react,
       iconBg: "#383E56",
       date: "",
       points: [
@@ -134,7 +140,7 @@ import {
     {
       title: "React Native Developer",
       company_name: "",
-      icon: tesla,
+      icon: react_native,
       iconBg: "#E6DEDD",
       date: "",
       points: [
@@ -147,7 +153,7 @@ import {
     {
       title: "MERN STACK Developer",
       company_name: "",
-      icon: shopify,
+      icon: mern,
       iconBg: "#383E56",
       date: "",
       points: [
@@ -160,7 +166,7 @@ import {
     {
       title: "Data Structures And Algorithms",
       company_name: "",
-      icon: meta,
+      icon: dsa,
       iconBg: "#E6DEDD",
       date: "",
       points: [
@@ -173,7 +179,7 @@ import {
     {
       title: "IEEE  - Electronics Branch Representative in BVM",
       company_name: "",
-      icon: meta,
+      icon: IEEE,
       iconBg: "#E6DEDD",
       date: "Jan 2022 - Dec 2022",
       points: [
@@ -189,31 +195,52 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rohit proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I think it's possible for ordinary people to be extraordinary",
+      name: "Elon Musk",
+      designation: "CEO",
+      company: "Space X and Tesla",
+      image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i8_p9wZBhtI8/v0/-1x-1.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rohit does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Man need's his difficulties because they are necessary to enjoy success",
+      name: "DR APJ Abdul Kalam",
+      designation: "Scientist",
+      company: "ISRO",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/800px-A._P._J._Abdul_Kalam.jpg",
     },
     {
       testimonial:
-        "After Rohit optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "To raise new questions,new possibilities,to regard old problems from a new angle,requires creative imagination and marks real advance in science",
+      name: "Albert Einstien",
+      designation: "Scientist",
+      company: "Germany",
+      image: "https://assets.weforum.org/article/image/responsive_large_-ytU8aFc7NXOVyhZ2HjKvs2CDIRFPYxBqgtKIJd9V-s.png",
     },
   ];
   
   const projects = [
+    {
+      name: "Linkedin Profile",
+      description:
+        "Here's the link to my linkedin profile.Giving a brief about my education and my projects. ",
+      tags: [
+        {
+          name: "introduction",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "education",
+          color: "green-text-gradient",
+        },
+        {
+          name: "experience",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: linkedin,
+      source_code_link: "https://www.linkedin.com/in/rohit-baruah/",
+    },
     {
       name: "Weather App",
       description:
@@ -277,6 +304,7 @@ import {
       image: car,
       source_code_link: "https://github.com/Rohit8940/Surveillance_Car",
     },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

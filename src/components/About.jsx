@@ -46,7 +46,7 @@ const About = () => {
         variants={fadeIn("","",0.1,0.1)}
         className="mt-4 text-secondary text-[17px]
         max-w-3xl leading-[30px]">
-          I am a skilled MERN stack developer with a with experience
+          I am a skilled MERN stack developer with experience
           in javascript and frameworks like React,node.js and mongodb.
           I have a strong foundation of object oriented programming and 
           data structures.I am a quick learner and decent collaboration

@@ -20,11 +20,18 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import react from "./company/react.png"
+import mern from "./company/mern.jpeg"
+import dsa from "./company/dsa.png"
+import IEEE from "./company/IEEE.jpg"
+import react_native from "./company/react native.png"
+import linkedin from "./linkedin.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
+// import meta from "./company/meta.png";
+// import shopify from "./company/shopify.png";
+// import starbucks from "./company/starbucks.png";
+// import tesla from "./company/tesla.png";
 import zomato from "./zomato.png";
 import weather from "./weather.png"
 import car from "./car.jpg"
@@ -55,14 +62,20 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  linkedin,
+  // meta,
+  // shopify,
+  // starbucks,
+  // tesla,
   // carrent,
   car,
   zomato,
   weather,
   // jobit,
   // tripguide,
+  react,
+  mern,
+  react_native,
+  IEEE,
+  dsa
 };
