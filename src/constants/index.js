@@ -15,15 +15,10 @@ import {
     git,
     figma,
     docker,
-    // meta,
-    // starbucks,
-    // tesla,
-    // shopify,
-    // carrent,
+
     zomato,
     weather,
-    // jobit,
-    // tripguide,
+    
     threejs,
     car,
     react,
@@ -31,7 +26,8 @@ import {
     dsa,
     react_native,
     IEEE,
-    linkedin
+    linkedin,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -205,7 +201,7 @@ import {
       testimonial:
         "Man need's his difficulties because they are necessary to enjoy success",
       name: "DR APJ Abdul Kalam",
-      designation: "Scientist",
+      designation: "Scientist from ",
       company: "ISRO",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/A._P._J._Abdul_Kalam.jpg/800px-A._P._J._Abdul_Kalam.jpg",
     },
@@ -213,7 +209,7 @@ import {
       testimonial:
         "To raise new questions,new possibilities,to regard old problems from a new angle,requires creative imagination and marks real advance in science",
       name: "Albert Einstien",
-      designation: "Scientist",
+      designation: "Scientist from ",
       company: "Germany",
       image: "https://assets.weforum.org/article/image/responsive_large_-ytU8aFc7NXOVyhZ2HjKvs2CDIRFPYxBqgtKIJd9V-s.png",
     },
