@@ -268,7 +268,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "weather",
+          name: "weather",  
           color: "green-text-gradient",
         },
         {
