@@ -261,7 +261,7 @@ import {
     {
       name: "Zomato Clone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A Replica of the popular food delivering Indian app built using React Native and Firebase.It supports Authentication and sends OTP with the help of google firebase and have basic UI of the home page",
       tags: [
         {
           name: "react native",
