@@ -238,6 +238,27 @@ import {
       source_code_link: "https://www.linkedin.com/in/rohit-baruah/",
     },
     {
+      name: "Linkedin Profile",
+      description:
+        "Here's the link to my linkedin profile.Giving a brief about my education and my projects. ",
+      tags: [
+        {
+          name: "introduction",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "education",
+          color: "green-text-gradient",
+        },
+        {
+          name: "experience",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: linkedin,
+      source_code_link: "https://www.linkedin.com/in/rohit-baruah/",
+    },
+    {
       name: "Weather App",
       description:
         "An App Showing real time weather created using React Native and Google Firebase.It uses the OpenWeatherMap API to fetch the weather information in real time.",

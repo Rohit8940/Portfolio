@@ -34,7 +34,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
+    // let response = await axios.get('http://localhost:5500/api/admin/message',form)
+    // console.log(response.data)
     emailjs
       .send(
         "service_1wuwstw",
