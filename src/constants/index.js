@@ -27,6 +27,7 @@ import {
     react_native,
     IEEE,
     linkedin,
+    Chat,
     
   } from "../assets";
   
@@ -217,9 +218,9 @@ import {
   
   const projects = [
     {
-      name: "Linkedin Profile",
+      name: " My Linkedin Profile",
       description:
-        "Here's the link to my linkedin profile.Giving a brief about my education and my projects. ",
+        "Here's the link to my linkedin profile.It gives brief intro about me,my education,work experiences and my personal projects ",
       tags: [
         {
           name: "introduction",
@@ -236,6 +237,27 @@ import {
       ],
       image: linkedin,
       source_code_link: "https://www.linkedin.com/in/rohit-baruah/",
+    },
+    {
+      name: "Live Chatting and Article App",
+      description:
+        "User Authentication using JWT,Real time Chat using Socket.io,Article viewing with pagination,Mongo schema for user,chat and articles",
+      tags: [
+        {
+          name: "socket.io",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongo schema",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Chat,
+      source_code_link: "https://github.com/Rohit8940/News-Web-App",
     },
     
     {

@@ -27,6 +27,7 @@ import dsa from "./company/dsa.png"
 import IEEE from "./company/IEEE.jpg"
 import react_native from "./company/react native.png"
 import linkedin from "./linkedin.png"
+import Chat from "../assets/Chat.png"
 
 
 
@@ -59,7 +60,7 @@ export {
   typescript,
   threejs,
   linkedin,
-
+  Chat,
   car,
   zomato,
   weather,
