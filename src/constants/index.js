@@ -28,6 +28,8 @@ import {
     IEEE,
     linkedin,
     Chat,
+    Aimtron,
+    ISRO
     
   } from "../assets";
   
@@ -61,6 +63,22 @@ import {
     },
     {
       title: "Data Structures And Algorithms",
+      icon: creator,
+    },
+    {
+      title: "Flutter",
+      icon: web,
+    },
+    {
+      title: "Machine and Deep Learning",
+      icon: mobile,
+    },
+    {
+      title: "TensorFlow,PyTorch",
+      icon: backend,
+    },
+    {
+      title: "CNN,YOLO",
       icon: creator,
     },
   ];
@@ -122,35 +140,31 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "",
-      icon: react,
+      title: "Researcher",
+      company_name: "ISRO - Space Applications Centre",
+      icon: ISRO,
       iconBg: "#383E56",
-      date: "",
+      date: "1/1/2025-Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Have built many projects and collaborated with others in the same",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "This is one of the projects built in React.js",
+        "Research Intern at SAC-ISRO Ahmedabad",
+        "Working On Deep Learning and App Developement",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "",
-      icon: react_native,
-      iconBg: "#E6DEDD",
-      date: "",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Have built many projects and collaborated with others in the same",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Zomato Clone and My weather are some of the projects made",
-      ],
-    },
-    {
-      title: "MERN STACK Developer",
-      company_name: "",
+      title: "MERN Developer",
+      company_name: "Coding Cloud Ahmedabad",
       icon: mern,
+      iconBg: "#E6DEDD",
+      date: "1/6/2023-1/7/2024",
+      points: [
+        "Internship at Coding Cloud Ahmedabad",
+        "Worked on my Portfoloio and developed an Ecommerce Website",
+      ],
+    },
+    {
+      title: "Internship",
+      company_name: "Aimtron Electronics Pvt.Ltd",
+      icon: Aimtron,
       iconBg: "#383E56",
       date: "",
       points: [
@@ -158,19 +172,6 @@ import {
         "Currently in training to build seamless websites including both backend and the fronend",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Yet to Build Projects on MERN",
-      ],
-    },
-    {
-      title: "Data Structures And Algorithms",
-      company_name: "",
-      icon: dsa,
-      iconBg: "#E6DEDD",
-      date: "",
-      points: [
-        "Skills in Data Structures and Algorithms",
-        "Solid foundation in Object Oriented Programming",
-        "Solving questions on Leetcode and Geeks for Geeks",
-        "Participating in competetive programming in CodeChef and HackerRank ",
       ],
     },
     {

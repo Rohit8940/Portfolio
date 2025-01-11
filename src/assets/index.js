@@ -28,6 +28,8 @@ import IEEE from "./company/IEEE.jpg"
 import react_native from "./company/react native.png"
 import linkedin from "./linkedin.png"
 import Chat from "../assets/Chat.png"
+import Aimtron from "../assets/company/Aimtron.png"
+import ISRO from "../assets/company/ISRO.png"
 
 
 
@@ -69,5 +71,7 @@ export {
   mern,
   react_native,
   IEEE,
-  dsa
+  dsa,
+  Aimtron,
+  ISRO
 };
