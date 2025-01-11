@@ -28,6 +28,25 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
+
+        {/* LinkedIn and Gmail Icons (on large screens) */}
+        <div className='hidden sm:flex gap-1 items-center ml-40'>
+          <a
+            href='https://www.linkedin.com/in/rohit-baruah/' // Replace with your LinkedIn profile
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white mx-4'
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href='mailto:baruahrohit344@gmail.com' // Replace with your Gmail ID
+            className='text-white mx-4'
+          >
+            <FaEnvelope size={24} />
+          </a>
+        </div>
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
@@ -44,10 +63,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        {/* Add LinkedIn and Gmail Icons */}
+          
+        {/* Mobile Menu Toggle */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <a
+        <a
             href='https://www.linkedin.com/in/rohit-baruah/' // Replace with your LinkedIn profile
             target='_blank'
             rel='noopener noreferrer'
@@ -57,7 +76,7 @@ const Navbar = () => {
           </a>
           <a
             href='mailto:baruahrohit344@gmail.com' // Replace with your Gmail ID
-            className='text-white mx-8'
+            className='text-white mx-7'
           >
             <FaEnvelope size={24} />
           </a>
