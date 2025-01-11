@@ -51,9 +51,9 @@ const Hero = () => {
       {isMobile ? (
         <div className="absolute top-[300px] w-full flex flex-col justify-center items-center z-20">
           <img
-            src={myimage1}
+            src={myimage}
             alt="Hero"
-            className="w-[60%] h-[300px] rounded-lg object-cover shadow-lg"
+            className="w-[80%] rounded-lg object-cover shadow-lg"
           />
           <p className="mt-20 text-lg text-white text-center">
             "Life is just a series of nested loops, and I'm here optimizing mine."
