@@ -1,10 +1,23 @@
 import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // Adjust breakpoint as needed
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Check screen width
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Set initial state
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className={`relative w-full h-[130vh] mx-auto`}>
