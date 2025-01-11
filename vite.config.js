@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Portfolio/", // Keep this if you are deploying to a subdirectory
+  // base: "/Portfolio/", // Keep this if you are deploying to a subdirectory
   plugins: [react()],
   server: {
     host: '0.0.0.0', // This makes the server accessible from other devices in the same network
