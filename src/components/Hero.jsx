@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -39,8 +38,18 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Render 3D model only if not mobile */}
-      {!isMobile && <ComputersCanvas />}
+      {/* Render image or 3D model based on screen size */}
+      <div className="absolute inset-0 flex justify-center items-center">
+        {!isMobile ? (
+          <ComputersCanvas /> // Render the 3D model for larger screens
+        ) : (
+          <img
+            src="C:\Users\neelt\Downloads\Portfolio\src\assets\myimage.jpg" // Replace with your image path
+            alt="Hero Illustration"
+            className="w-full h-auto object-contain" // Adjust styling as needed
+          />
+        )}
+      </div>
 
       <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
