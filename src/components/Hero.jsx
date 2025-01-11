@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
+import { Canvas } from "@react-three/fiber"; // Ensure react-three-fiber is installed
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+const ComputersCanvas = () => (
+  <Canvas>
+    <mesh>
+      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
+      <meshStandardMaterial attach="material" color="orange" />
+    </mesh>
+  </Canvas>
+);
 
 const Hero = () => {
   return (
-    <section className={`relative w-full min-h-screen mx-auto`}>
+    <section className="relative w-full min-h-screen mx-auto">
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -23,8 +32,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Ensure ComputersCanvas loads correctly */}
-      {ComputersCanvas ? <ComputersCanvas /> : <div>Loading 3D Model...</div>}
+      {/* Test with a simple 3D box */}
+      <ComputersCanvas />
 
       <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
