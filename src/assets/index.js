@@ -30,6 +30,7 @@ import linkedin from "./linkedin.png"
 import Chat from "../assets/Chat.png"
 import Aimtron from "../assets/company/Aimtron.png"
 import ISRO from "../assets/company/ISRO.png"
+import myimage from "../assets/myimage.jpg"
 
 
 
@@ -73,5 +74,6 @@ export {
   IEEE,
   dsa,
   Aimtron,
-  ISRO
+  ISRO,
+  myimage
 };

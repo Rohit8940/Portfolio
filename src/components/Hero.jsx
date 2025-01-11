@@ -1,27 +1,30 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
+import myimage from "../assets/myimage.jpg"; // Ensure this path is correct
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  // Check screen size and update `isMobile` state
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Check screen width
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener("resize", handleResize);
-
-    // Set initial state
+    // Set initial state and add event listener
     handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <section className={`relative w-full h-[130vh] mx-auto`}>
+    <section className="relative w-full h-screen mx-auto">
+      {/* Text Section */}
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#4B00B1]" />
@@ -33,25 +36,34 @@ const Hero = () => {
             Hi, I'm <span className="text-[Darkblue]">Rohit</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Web and Mobile Applications <br className="sm:block hidden" />
-          </p>
+  {isMobile ? (
+    "Researcher at  ISRO-SAC | MERN Stack | Artificial Intelligence"
+  ) : (
+    "I develop Web and Mobile Applications and Train Models"
+  )}
+  <br className="sm:block hidden" />
+</p>
         </div>
       </div>
 
-      {/* Render image or 3D model based on screen size */}
-      <div className="absolute inset-0 flex justify-center items-center">
-        {!isMobile ? (
-          <ComputersCanvas /> // Render the 3D model for larger screens
-        ) : (
+      {/* Conditional Rendering for Image and 3D Model */}
+      {isMobile ? (
+        <div className="absolute top-[300px] w-full flex flex-col justify-center items-center z-20">
           <img
-            src="C:\Users\neelt\Downloads\Portfolio\src\assets\myimage.jpg" // Replace with your image path
-            alt="Hero Illustration"
-            className="w-full h-auto object-contain" // Adjust styling as needed
+            src={myimage}
+            alt="Hero"
+            className="w-[80%] h-[100%] rounded-lg object-cover shadow-lg"
           />
-        )}
-      </div>
+          <p className="mt-20 text-lg text-white text-center">
+            "There is magic in my fingers as i am a Guitarist by Passion and Coder by Profession."
+          </p>
+        </div>
+      ) : (
+        <ComputersCanvas />
+      )}
 
-      <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
+      {/* Moving Animation */}
+      <div className="absolute bottom-10 w-full flex justify-center items-center z-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
