@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 import myimage from "../assets/myimage.jpg"; // Ensure this path is correct
+import myimage1 from "../assets/myimage1.jpg"; // Ensure this path is correct
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -50,9 +51,9 @@ const Hero = () => {
       {isMobile ? (
         <div className="absolute top-[300px] w-full flex flex-col justify-center items-center z-20">
           <img
-            src={myimage}
+            src={myimage1}
             alt="Hero"
-            className="w-[80%] h-[100%] rounded-lg object-cover shadow-lg"
+            className="w-[60%] h-[300px] rounded-lg object-cover shadow-lg"
           />
           <p className="mt-20 text-lg text-white text-center">
             "There is magic in my fingers as i am a Guitarist by Passion and Coder by Profession."
@@ -63,7 +64,7 @@ const Hero = () => {
       )}
 
       {/* Moving Animation */}
-      <div className="absolute bottom-10 w-full flex justify-center items-center z-10">
+      <div className="absolute bottom-2 w-full flex justify-center items-center z-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

@@ -1,4 +1,5 @@
 import { Html, useProgress } from "@react-three/drei";
+import { px } from "framer-motion";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
@@ -11,6 +12,7 @@ const CanvasLoader = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        margin:"40px"
       }}
     >
       <span className='canvas-loader'></span>
