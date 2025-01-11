@@ -56,7 +56,8 @@ const Hero = () => {
             className="w-[60%] h-[300px] rounded-lg object-cover shadow-lg"
           />
           <p className="mt-20 text-lg text-white text-center">
-            "There is magic in my fingers as i am a Guitarist by Passion and Coder by Profession."
+            "Life is just a series of nested loops, and I'm here optimizing mine."
+            {/* "There is magic in my fingers as i am a Guitarist by Passion and Coder by Profession." */}
           </p>
         </div>
       ) : (

@@ -168,10 +168,8 @@ import {
       iconBg: "#383E56",
       date: "",
       points: [
-        "Developing and maintaining web application Using MERN Stack",
-        "Currently in training to build seamless websites including both backend and the fronend",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Yet to Build Projects on MERN",
+        "Learned production line for PCB from Design to AOI(Automatic Optical Inspection)",
+        "Got an insight about Computer Networks,Cybersecurity and AI",
       ],
     },
     {
