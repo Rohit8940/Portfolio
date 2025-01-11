@@ -1,19 +1,13 @@
 import { motion } from "framer-motion";
-import { Canvas } from "@react-three/fiber"; // Ensure react-three-fiber is installed
+import { useMediaQuery } from "react-responsive";
 import { styles } from "../styles";
-
-const ComputersCanvas = () => (
-  <Canvas>
-    <mesh>
-      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-      <meshStandardMaterial attach="material" color="orange" />
-    </mesh>
-  </Canvas>
-);
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // Adjust breakpoint as needed
+
   return (
-    <section className="relative w-full min-h-screen mx-auto">
+    <section className={`relative w-full h-[130vh] mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -24,7 +18,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#4B00B1]">Rohit</span>
+            Hi, I'm <span className="text-[Darkblue]">Rohit</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop Web and Mobile Applications <br className="sm:block hidden" />
@@ -32,14 +26,16 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Test with a simple 3D box */}
-      <ComputersCanvas />
+      {/* Render 3D model only if not mobile */}
+      {!isMobile && <ComputersCanvas />}
 
       <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{ y: [0, 24, 0] }}
+              animate={{
+                y: [0, 24, 0],
+              }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
