@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 import myimage from "../assets/myimage.jpg"; // Ensure this path is correct
-import myimage1 from "../assets/myimage1.jpg"; 
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,11 +20,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen flex flex-col items-center justify-center">
       {/* Text Section */}
-      <div
-        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
+      <div className={`absolute top-24 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#4B00B1]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
@@ -36,47 +32,28 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[Darkblue]">Rohit</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-  {isMobile ? (
-    "Researcher at  ISRO-SAC | MERN Stack | Artificial Intelligence"
-  ) : (
-    "I develop Web and Mobile Applications and Train Models"
-  )}
-  <br className="sm:block hidden" />
-</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-center sm:text-left`}>
+            Researcher at ISRO-SAC | MERN Stack | Artificial Intelligence
+          </p>
         </div>
       </div>
 
-      {/* Conditional Rendering for Image and 3D Model */}
-      {isMobile ? (
-        <div className="absolute top-[300px] w-full flex flex-col justify-center items-center z-20">
-          <img
-            src={myimage}
-            alt="Hero"
-            className="w-[80%] rounded-lg object-cover shadow-lg"
-          />
-          <p className="mt-20 text-lg text-white text-center">
-            "Life is just a series of nested loops, and I'm here optimizing mine."
-            {/* "There is magic in my fingers as i am a Guitarist by Passion and Coder by Profession." */}
-          </p>
-        </div>
-      ) : (
-        <ComputersCanvas />
-      )}
+      {/* Image Section - Ensures proper fitting */}
+      <div className="absolute top-[65%] transform -translate-y-1/2 w-full flex justify-center z-20">
+        <img
+          src={myimage}
+          alt="Hero"
+          className="w-[80%] md:w-[50%] lg:w-[30%] rounded-lg object-cover shadow-lg max-h-[50vh]"
+        />
+      </div>
 
       {/* Moving Animation */}
-      <div className="absolute bottom-2 w-full flex justify-center items-center z-10">
+      <div className="absolute bottom-4 w-full flex justify-center items-center z-10">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-[35px] h-[50px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
+              animate={{ y: [0, 30, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
