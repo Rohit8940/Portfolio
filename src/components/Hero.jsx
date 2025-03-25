@@ -3,7 +3,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 import myimage from "../assets/myimage.jpg"; // Ensure this path is correct
-import myimage1 from "../assets/myimage1.jpg"; // Ensure this path is correct
+import myimage1 from "../assets/myimage1.jpg"; 
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
